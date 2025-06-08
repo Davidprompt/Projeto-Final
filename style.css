@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --cor-principal: #c0c0c0;
+    --cor-secundaria: #ffffff;
+    --cor-destaque: #C92BFC;
+    --cor-fundo: #121212;
+    --cor-card: #1f1f1f;
+    --cor-footer: #181818;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: 'Chakra Petch', sans-serif;
+    color: var(--cor-principal);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h5 {
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+.lead, .btn-link {
+    color: var(--cor-destaque);
+    font-weight: 700;
+}
+
+a, .btn-link:hover {
+    color: var(--cor-principal);
+}
+
+a:hover {
+    color: var(--cor-destaque);
+}
+
+.badge {
+    margin-right: 5px;
+    background-color: #333;
+    color: var(--cor-destaque);
+}
+
+.card {
+    background-color: var(--cor-card);
+    color: var(--cor-principal);
+    border: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(201, 43, 252, 0.2);
+}
+
+.modal-content {
+    background-color: var(--cor-card);
+    color: var(--cor-principal);
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+footer {
+    background-color: var(--cor-footer);
+    color: var(--cor-principal);
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 3rem;
+}
+
+footer a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor-secundaria);
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--cor-destaque);
+    margin-right: 8px;
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: rgb(255 255 255 / 75%) !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%; 
+}
